@@ -1,0 +1,345 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Gudea:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+/*applies to whole page*/
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+/*headers and writing */
+h1 {
+    font-size: 4rem;
+    font-weight: 200;
+    font-family: 'Bree Serif', serif;
+    color: #373635;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: 'Bree Serif', serif;
+    color: #373635;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Bree Serif', serif;
+    color: #373635;
+    text-align: center;
+}
+
+
+h4 {
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Bree Serif', serif;
+    color: #403629;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Gudea', sans-serif;
+    color: #484542;
+    text-align: center;
+}
+
+h6 {
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Gudea', sans-serif;
+    color: #403629;
+    text-align: center;
+}
+
+
+.card-text {
+    font-family: 'Gudea', sans-serif;
+    padding-top: 2rem;
+
+}
+
+.para-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-body .para-text {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.sub_heading {
+    margin-top: 8rem;
+}
+
+
+/*navigation*/
+.bg-canteen {
+    background-color: transparent;
+}
+
+.navbar-nav .nav-link {
+    color: #BFBFBC;
+}
+
+.navactive {
+    border-bottom: 3px solid #373635;
+}
+
+.navbar-image {
+    width: 8px;
+    padding-left: 50px;
+}
+
+.nav-image {
+    padding-right: 7rem;
+}
+
+a:hover {
+    color: #89ADAE;
+}
+
+
+.nav-title {
+    font-family: 'Bree Serif', serif;
+    color: #373635;
+    padding: 2.6rem;
+    font-size: 1rem;
+}
+
+.dropdown-item {
+    font-family: 'Bree Serif', serif;
+    color: #484542;
+    font-size: 1rem;
+}
+
+
+/*jumbrotron*/
+.jumbotron {
+    background: url("../images/home_page/jumbotron_ordering.jpg") no-repeat center center;
+    background-size: cover;
+    /*height: 38vh;*/
+}
+
+.jumbotron h3 {
+    font-size: 5rem;
+    color: #403629;
+    font-family: 'Gudea', sans-serif;
+}
+
+.jumbotron p {
+    color: #403629;
+    font-family: 'Gudea', sans-serif;
+    padding-top: 0.5rem;
+}
+
+
+/*cards and padding*/
+.home-page {
+    margin-top: 6rem;
+}
+
+.button-card {
+    font-family: 'Gudea', sans-serif;
+    color: #373635;
+    border-width: 2px;
+    border-color: #2A84A0;
+}
+
+.button-card-signup {
+    font-family: 'Gudea', sans-serif;
+    color: #373635;
+    border-width: 2px;
+    border-color: #2A84A0;
+    margin-left: 20rem;
+}
+
+.button-card-other {
+    font-family: 'Gudea', sans-serif;
+    color: #484542;
+    border-width: 2px;
+    border-color: #799CFF;
+    padding-left: 45%;
+    padding-right: 44.5%;
+
+}
+
+.card-title-info {
+    color: #799CFF;
+}
+
+
+.carousel-container {
+    margin-left: 8rem;
+    width: 30rem;
+}
+
+.card-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+x
+    /* Footer */
+.footer-link {
+    color: #484542;
+}
+
+.page-footer {
+    background-color: #89ADAE;
+    background-image: linear-gradient(#FFFFFF 40%, #89ADAE 100%);
+
+}
+
+.footer_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+
+}
+
+
+a {
+    color: #484542;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+body, html {
+    height: 100%;
+
+}
+
+
+/*background image and text for the home page*/
+.background_img {
+    background: url("../images/home_page/canteen_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.background_img h1 {
+    position: absolute; /* To place the text on the image*/
+    top: 290px; /* The exact location of the text from the top of the image*/
+    width: 100%;
+    font-size: 5rem;
+    font-family: 'Bree Serif', serif;
+    color: #373635;
+}
+
+.background_img h3 {
+    position: absolute;
+    top: 340px;
+    width: 100%;
+    font-size: 2rem;
+    color: #2A84A0;
+}
+
+
+/*background image and text for the other remaining pages*/
+.background_img_all {
+    background: url("../images/home_page/jumbotron_ordering.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+}
+
+.background_img_all h2 {
+    position: absolute; /* To place the text on the image*/
+    top: 200px; /* The exact location of the text from the top of the image*/
+    width: 100%;
+    font-size: 5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.background_img_all h6 {
+    position: absolute; /* To place the text on the image*/
+    top: 250px; /* The exact location of the text from the top of the image*/
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+    color: #2A84A0;
+}
+
+/*centers images and text in the middle of the screen*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.table-align {
+    margin-left: 20%;
+}
+
+
+#content {
+    border-radius: 3px;
+    padding: 5px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* Table */
+#emp_table {
+    border: 5px solid #f4f0ec;
+}
+
+/* Table header */
+
+.tr_header {
+    background-color: #89ADAE;
+    padding-top: 3rem;
+    font-size: 1.3rem;
+}
+
+.tr_header a:hover {
+    color: #89ADAE;
+}
+
+.tr_header th {
+    color: #373635;
+    padding: 10px 0px;
+    padding-left: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* Table rows and columns */
+#emp_table td {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#emp_table tr:nth-child(odd) {
+    background-color: #f4f0ec;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.itemsTabletext {
+    font-size: 0.8rem;
+    color: #2A84A0;
+}
