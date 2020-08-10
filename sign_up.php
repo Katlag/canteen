@@ -56,14 +56,88 @@ $con = mysqli_connect("localhost", "lagoutariska", "bluefrog55", "lagoutariska_c
         </div>
     </nav>
     <h2>THE CANTEEN</h2>
-    <h6><br>────── Sign up ──────</h6>
+    <h6><br>────── Sign Up ──────</h6>
 </div>
 
+<div class="container">
+    <img src="images/home_page/signup_subheader.png" class="center" alt="student icon" width="500"
+         height="125"><br>
+    <div class="signup-form">
+        <main>
+            <h3>Sign Up Here</h3>
+            <hr style="border: 2px solid #89ADAE; width:10%">
+            <h6>*Please enter your Name and Email*</h6>
+            <form name="signup_form" id='signup_form' method="post" action="process_register.php">
+                <div class="input-group">
+                    <label>First Name:</label>
+                    <input type="text" name="FName">
+                </div>
+                <div class="input-group">
+                    <label>Last Name:</label>
+                    <input type="text" name="LName">
+                </div>
+                <div class="input-group">
+                    <label>Email Address:</label>
+                    <input type="text" name="Email">
+                </div>
+                <div class="input-group">
+                    <input type="submit" name="submit" id="submit" value="Sign Up"
+                           class="button-card-signup btn btn-light center">
+                </div>
+                <br>
+                <p class="para-text-signup">
+                    Already Registered?<a href="order.php"> Order now!</a>
+                </p>
+            </form>
+        </main>
+    </div>
+</div>
+
+<div class="page-footer">
+    <div class="container text-center text-md-left mt-5">
+        <div class="row mt-3">
+            <div class="logo mx-auto mb-md-0 mb-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.5363311184515!2d174.77800201542235!3d-41.275430479274625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38ae2f27710d0d%3A0x2d0763d38f00974b!2sWellington%20Girls&#39;%20College!5e0!3m2!1sen!2snz!4v1595291334782!5m2!1sen!2snz"
+                        width="500" height="300" style="border:0; margin-bottom: 1rem;"
+                        allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h4 class="text-uppercase font-weight-bold">Visit us</h4>
+                <small class="text">Official website</small>
+                <p class="footer-text">
+                    <a class="footer-link" href="https://wgc.school.nz/">Wellington Girls College website</a>
+                </p>
+                <small class="text">Canteen contact</small>
+                <p class="footer-text">
+                    <a class="footer-link"
+                       href="https://www.facebook.com/CanteenLady">Contact the Canteen</a>
+                </p>
+                <small class="text">Facebook page</small>
+                <p class="footer-text">
+                    <a class="footer-link"
+                       href="https://www.facebook.com/CanteenLady">Facebook</a>
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-2 mb-4">
+                <h4 class="text-uppercase font-weight-bold">More Info</h4>
+                <small class="text">Address</small>
+                <p class="footer-text">Pipitea Street, Thorndon, Wellington 6011</p>
+                <small class="text">Opening hours</small>
+                <p class="footer-text">9:00am-2:00pm
+                </p>
+                <small class="text">Phone number - Wellington Girls College</small>
+                <p class="footer-text">04-472 5743</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
