@@ -33,7 +33,6 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    font-weight: 200;
     font-family: 'Bree Serif', serif;
     color: #373635;
     text-align: center;
@@ -56,37 +55,38 @@ h5 {
 }
 
 h6 {
-    font-size: 2rem;
-    font-weight: 200;
-    font-family: 'Gudea', sans-serif;
-    color: #403629;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #2A84A0;
     text-align: center;
 }
 
 
-.card-text {
-    font-family: 'Gudea', sans-serif;
-    padding-top: 2rem;
-
-}
-
+/*paragraph text*/
 .para-text {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     padding-top: 0.5rem;
 }
 
-.p {
+.para-text-items {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.para-text-signup {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #2A84A0;
+    text-align: center;
+}
+
+.card-text {
     font-family: 'Roboto', sans-serif;
 }
 
-.card-body .para-text {
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
-.sub_heading {
-    margin-top: 8rem;
+.p {
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -103,13 +103,9 @@ h6 {
     border-bottom: 3px solid #373635;
 }
 
-.navbar-image {
-    width: 8px;
-    padding-left: 50px;
-}
 
 .nav-image {
-    padding-right: 7rem;
+    padding-right: 5rem;
 }
 
 a:hover {
@@ -120,7 +116,7 @@ a:hover {
 .nav-title {
     font-family: 'Bree Serif', serif;
     color: #373635;
-    padding: 2.6rem;
+    padding: 2rem;
     font-size: 1rem;
 }
 
@@ -171,6 +167,7 @@ a:hover {
     margin-left: 20rem;
 }
 
+
 .button-card-other {
     font-family: 'Gudea', sans-serif;
     color: #484542;
@@ -197,25 +194,23 @@ a:hover {
     margin-right: auto;
 }
 
-x
-    /* Footer */
+
+/* Footer */
 .footer-link {
     color: #484542;
 }
 
 .page-footer {
+    margin-top: 10rem;
     background-color: #89ADAE;
     background-image: linear-gradient(#FFFFFF 40%, #89ADAE 100%);
-
 }
 
 .footer_text {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     padding-top: 0.5rem;
-
 }
-
 
 a {
     color: #484542;
@@ -223,16 +218,14 @@ a {
     background-color: transparent;
 }
 
-
 body, html {
     height: 100%;
-
 }
 
 
 /*background image and text for the home page*/
 .background_img {
-    background: url("../images/home_page/canteen_bg.png");
+    background: url("../images/home_page/canteen_bg_sandwich.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -256,6 +249,13 @@ body, html {
     color: #2A84A0;
 }
 
+.background_img form {
+    margin-top: 21rem;
+    background: transparent;
+    margin-left: 6rem;
+    width: 1rem;
+}
+
 
 /*background image and text for the other remaining pages*/
 .background_img_all {
@@ -266,17 +266,26 @@ body, html {
     position: relative;
 }
 
+
+.background_img_update {
+    background: url("../images/update_data/cake_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+}
+
 .background_img_all h2 {
-    position: absolute; /* To place the text on the image*/
-    top: 200px; /* The exact location of the text from the top of the image*/
+    position: absolute;
+    top: 200px;
     width: 100%;
     font-size: 5rem;
     font-family: 'Bree Serif', serif;
 }
 
 .background_img_all h6 {
-    position: absolute; /* To place the text on the image*/
-    top: 250px; /* The exact location of the text from the top of the image*/
+    position: absolute;
+    top: 250px;
     width: 100%;
     font-size: 2rem;
     font-family: 'Bree Serif', serif;
@@ -291,25 +300,40 @@ body, html {
     text-align: center;
 }
 
-.table-align {
-    margin-left: 20%;
+.table-center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-#content {
-    border-radius: 3px;
-    padding: 5px;
-    width: 65%;
-    margin: 0 auto;
+/*Items page tables*/
+#items-content tr {
+    color: #373635;
+    font-size: 0.8rem;
+
 }
 
-/* Table */
-#emp_table {
+#itemstable td {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+#itemstable tr:nth-child(odd) {
+    background-color: #f4f0ec;
+    font-family: 'Roboto', sans-serif;
+}
+
+#itemstable th {
+    color: #373635;
+}
+
+.table-striped {
     border: 5px solid #f4f0ec;
 }
 
-/* Table header */
 
+/* Table header */
 .tr_header {
     background-color: #89ADAE;
     padding-top: 3rem;
@@ -327,6 +351,84 @@ body, html {
     letter-spacing: 0.5px;
 }
 
+.items-icon {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+/*Update data page*/
+
+#items-content {
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 0.8rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Delete orders table*/
+#delete-content {
+    width: 65%;
+    font-size: 1rem;
+}
+
+#delete-content th {
+    color: #2A84A0;
+    font-size: 1.2rem;
+    text-align: left;
+
+}
+
+#delete-content td {
+    text-align: left;
+    padding-left: 0.2rem;
+
+}
+
+.delete-text {
+    color: red;
+    font-size: 1rem;
+}
+
+
+.button-update {
+    font-family: 'Roboto', sans-serif;
+    background-color: #bfdfe0;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+}
+
+#insert-content {
+    padding: 5px;
+    font-size: 1rem;
+    margin-right: 20rem;
+}
+
+/*update data table*/
+#items-content th {
+    color: #2A84A0;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+
+/*Items sort table*/
+#emp_table {
+    border: 5px solid #f4f0ec;
+}
+
+#content {
+    border-radius: 3px;
+    padding: 5px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.items_table tr {
+    font-size: 0.5rem;
+}
+
+
 /* Table rows and columns */
 #emp_table td {
     padding: 10px;
@@ -342,4 +444,45 @@ body, html {
 .itemsTabletext {
     font-size: 0.8rem;
     color: #2A84A0;
+}
+
+
+/*sign up form*/
+form {
+    width: 50%;
+    margin: 0px auto;
+    padding: 30px;
+    background: transparent;
+}
+
+.input-group label {
+    text-align: left;
+    margin-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.input-group input {
+    height: 35px;
+    width: 93%;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.btn {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/*map property*/
+iframe {
+    border-width: 0px;
+}
+
+/*orders page*/
+.label-text {
+    margin-right: 8rem;
+}
+
+.card {
+    border: transparent;
 }

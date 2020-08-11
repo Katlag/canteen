@@ -6,7 +6,6 @@ $all_items_result = mysqli_query($con, $all_items_query);
 
 ?>
 
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -19,7 +18,7 @@ $all_items_result = mysqli_query($con, $all_items_query);
     <link rel='stylesheet' type='text/css' href="css/style.css">
 </head>
 
-</body>
+<body>
 <div class="background_img">
     <nav class="navbar navbar-expand-lg navbar-light bg-canteen">
         <div class="container">
@@ -38,7 +37,7 @@ $all_items_result = mysqli_query($con, $all_items_query);
                         <a class="nav-title" href="index.php">HOME</a>
                     </li>
                     <li class="nav-item hover">
-                        <a class="nav-title" href="items.php">ITEMS</a>
+                        <a class="nav-title" href="items.php">MENU</a>
                     </li>
                     <li class="nav-item hover">
                         <a class="nav-title" href="sign_up.php">SIGN UP</a>
@@ -46,7 +45,7 @@ $all_items_result = mysqli_query($con, $all_items_query);
                     <li class="nav-item hover">
                         <a class="nav-title" href="order.php">ORDER</a>
                     </li>
-                    <li class="nav-item dropdown hover ">
+                    <li class="nav-item dropdown hover">
                         <a class="nav-title dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ADMIN</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -65,40 +64,9 @@ $all_items_result = mysqli_query($con, $all_items_query);
     <h3 style="text-shadow: 1px 1px #373635"><br>────── Wellington Girls College ──────</h3>
 </div>
 
-
 <main>
     <div class="container">
-        <div class="card-image-top mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <h2>ABOUT US</h2>
-                    <div class="card-body">
-                        <!--Orders form-->
-                        <p class="para-text">
-                            Welcome to the offical Wellington Girls College canteen website. Our number one priority at
-                            the canteen is <b>you</b>! Our range of savoury and sweet foods contrast greatly to that of
-                            our drinks and cold treats.
-                            <br><br>
-                            We open from 9:00am to 2:00pm from Monday to Friday to ensure
-                            that you can buy the snack that you want for lunch! Come visit the canteen down by the quad
-                            and try some of our items, all at an affordable price.
-                            <br><br>
-                            To order now, click the sign-up button down below so you can enter all the food and drink
-                            items that
-                            you would like to buy. Enjoy!
-
-                            <br><br>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/home_page/canteen_img.png" class="card-img" alt="WGC canteen">
-                </div>
-            </div>
-            <a href="sign_up.php" alt="Sign up" class="button-card-signup btn btn-light">Sign up here!</a>
-        </div>
-        <hr style="border: 4px solid #2A84A0; margin-top: 5rem; margin-bottom: 4rem;"/>
-
+        <br>
         <div class="card-image-top mb-3">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -111,20 +79,16 @@ $all_items_result = mysqli_query($con, $all_items_query);
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/home_page/canteen_img.png"
+                                         alt="wgc canteen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/home_page/wgc_kids.png"
+                                         alt="kids">
+                                </div>
+                                <div class="carousel-item">
                                     <img class="d-block w-100" src="images/home_page/sandwich.png"
-                                         alt="Sandwich">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/home_page/nachos.png"
-                                         alt="Nachos">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/home_page/soft_serve.png"
-                                         alt="Soft serve">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/home_page/coke.png"
-                                         alt="Coke">
+                                         alt="sandwich">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#canteen_carousel" role="button"
@@ -143,52 +107,90 @@ $all_items_result = mysqli_query($con, $all_items_query);
                 <div class="col-md-8">
                     <div class="card-body">
                         <!--Drinks form-->
-                        <h2>ITEMS INFORMATION</h2>
-                        <p class="para-text">
-                            Here at the Wellington Girls College canteen, we offer some of the best snacks and drinks,
-                            all for an affordable price. Our job is to ensure you can find the best food/drink suited to
-                            your
-                            liking. To see all the information about the items we sell at the canteen, click the button
-                            below to see more.
+                        <h2>ABOUT US</h2>
+                        <p class="para-text" style="padding-left: 2rem">
+                            Welcome to the offical Wellington Girls College canteen website. Our number one priority at
+                            the canteen is <b>you</b>! Our range of savoury and sweet foods contrast greatly to that of
+                            our drinks and cold treats.
                             <br><br>
+                            We open from 9:00am to 2:00pm from Monday to Friday to ensure
+                            that you can buy the snack that you want for lunch! Come visit the canteen down by the quad
+                            and try some of our items, all at an affordable price. Enjoy!
+                            <br>
                         </p>
-                        <form name="items_form" id="items_form" method="get" action="items.php">
-                            <select id="item" name="item">
-                                <!--options-->
-                                <?php
-                                while ($all_items_record = mysqli_fetch_assoc($all_items_result)) {
-                                    echo "<option value = '" . $all_items_record['ItemID'] . "'>";
-                                    echo $all_items_record['Item'];
-                                    echo "</option>";
-                                }
-                                ?>
-                            </select>
-                            <input type="submit" name="item_button" value="Show the item information"
-                                   class="button-card btn btn-light">
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
 
-        <hr style="border: 4px solid #2A84A0; margin-top: 4rem; margin-bottom: 3rem;"/>
+        <hr style="border: 3px solid #2A84A0; margin-top: 4rem; margin-bottom: 3rem;"/>
 
-        <h2>SIGN UP TO ORDER</h2>
-        <div>
-            <img src="images/home_page/signup_subheader.png" class="center" alt="items subheader" width="500"
-                 height="125">
-        </div>
-        <div class="card-image-top mb-3">
-            <div class="row no-gutters">
-                <div class="card-body center">
-                    <!--Orders form-->
-                    <p class="para-text">
-                        Before you order, please sign up and enter your first and last name so we can keep track of your
-                        order. Thanks!
-                        <br><br>
-                        ↓↓↓
+        <br>
+        <h2>OUR MENU</h2>
+        <hr style="border: 2px solid #89ADAE; width:10%">
+        <p class="para-text-signup center">Find out what we sell at the canteen</p>
+
+        <div class="card-deck">
+            <div class="card">
+                <img src="images/items/hamburger.png" class="center" alt="hamburger" width="100" height="100">
+                <div class="card-body">
+                    <h3 class="card-title">Savoury</h3>
+                    <p><small class="text-muted center">Nothing over $4.00</small>
                     </p>
-                    <a href="sign_up.php" alt="Sign up" class="button-card btn btn-light">Sign up here!</a>
+                    <p class="card-text center">Our savoury foods range from anything between pizzas, burgers, corndogs
+                        and many more. Don't forget our healthy options such as wraps and sandwiches!</p>
+                    <a href="items.php" class="button-card btn btn-light center">Find out more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/items/donut.png" class="center" alt="donut" width="100" height="100">
+                <div class="card-body">
+                    <h3 class="card-title">Sweet</h3>
+                    <p><small class="text-muted center">Nothing over $3.50</small></p>
+                    <p class="card-text center">Treat yourself to some of our sweet treats at the canteen. Our sweet
+                        foods range from a variety of slices, jelly's and ice-creams. Be sure to try them out!</p>
+                    <a href="items.php" class="button-card btn btn-light center">Find out more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/items/iced_coffee.png" class="center" alt="iced coffee" width="100" height="100">
+                <div class="card-body">
+                    <h3 class="card-title">Drinks</h3>
+                    <p><small class="text-muted center">Nothing over $3.00</small></p>
+                    <p class="card-text center">Sit down and relax with a drink from our menu. Our drinks range from
+                        cold to hot - whether that be a or a lemon tea, hot-chocolate or a refreshing iced coffee!</p>
+                    <a href="items.php" class="button-card btn btn-light center">Find out more</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr style="border: 3px solid #2A84A0; margin-top: 5rem; margin-bottom: 4rem;"/>
+
+
+        <br><br>
+        <h2>GET STARTED</h2>
+        <hr style="border: 2px solid #89ADAE; width:10%">
+        <p class="para-text-signup center">Sign up to order, or order now if you've already signed up!</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/home_page/sign_up.png" class="center" alt="laptop" width="450" height="300">
+                        <p class="para-text center">Before ordering, please sign up and enter your full name and email
+                            address so that we can keep track of your order!</p>
+                        <a href="sign_up.php" class="button-card btn btn-light center">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/home_page/order_pic.png" class="center" alt="order" width="450" height="300">
+                        <p class="para-text center">Already signed up? Fill out our order form with your name and item
+                            of choice.</p>
+                        <a href="order.php" class="button-card btn btn-light center">Order now</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,20 +199,11 @@ $all_items_result = mysqli_query($con, $all_items_query);
 
 
 <div class="page-footer">
-    <div class="container">
-        <div class="row py-4 d-flex align-items-center">
-            <div class="text-center text-md-left">
-                <!--                <h4 class="mb-0">Get in contact with us for more information</h4>-->
-            </div>
-        </div>
-    </div>
-
-
     <div class="container text-center text-md-left mt-5">
         <div class="row mt-3">
             <div class="logo mx-auto mb-md-0 mb-4">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.5363311184515!2d174.77800201542235!3d-41.275430479274625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38ae2f27710d0d%3A0x2d0763d38f00974b!2sWellington%20Girls&#39;%20College!5e0!3m2!1sen!2snz!4v1595291334782!5m2!1sen!2snz"
-                        width="500" height="300" frameborder="0" style="border:0; margin-bottom: 1rem;"
+                        width="500" height="300" style="border:0; margin-bottom: 1rem;"
                         allowfullscreen=""
                         aria-hidden="false" tabindex="0"></iframe>
             </div>
@@ -223,9 +216,8 @@ $all_items_result = mysqli_query($con, $all_items_query);
                 <small class="text">Canteen contact</small>
                 <p class="footer-text">
                     <a class="footer-link"
-                       href="https://www.facebook.com/CanteenLady">Contact the
-                        Canteen</a>
-                </p class="footer-text">
+                       href="https://www.facebook.com/CanteenLady">Contact the Canteen</a>
+                </p>
                 <small class="text">Facebook page</small>
                 <p class="footer-text">
                     <a class="footer-link"

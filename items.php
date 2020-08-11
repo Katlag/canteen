@@ -54,7 +54,7 @@ $category_record = mysqli_fetch_assoc($category_result);
                         <a class="nav-title" href="index.php">HOME</a>
                     </li>
                     <li class="nav-item navactive">
-                        <a class="nav-title" href="items.php">ITEMS</a>
+                        <a class="nav-title" href="items.php">MENU</a>
                     </li>
                     <li class="nav-item hover">
                         <a class="nav-title" href="sign_up.php">SIGN UP</a>
@@ -77,15 +77,47 @@ $category_record = mysqli_fetch_assoc($category_result);
         </div>
     </nav>
     <h2>THE CANTEEN</h2>
-    <h6><br>────── Items ──────</h6>
+    <h6><br>────── Menu ──────</h6>
 </div>
 
 <main>
     <div class="container">
-        <div>
-            <img src="images/items/items_subheader_grey.png" class="center" alt="items subheader" width="500"
-                 height="125">
+
+        <h3 class="text-uppercase"> Our top picks for the week</h3>
+        <p class="para-text-signup">Get them before they're all sold out!</p>
+        <br>
+        <div class="row">
+            <div class="column center">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Corndog</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Rated our number one favourite <br>★★★★★</h6>
+                        <img src="images/items/corndog.png" class="card-img" alt="corndog">
+                    </div>
+                </div>
+            </div>
+            <div class="column center">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Caramel Slice</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Rated our second favourite <br>★★★★☆</h6>
+                        <img src="images/items/caramel_slice.png" class="card-img" alt="caramel slice">
+                    </div>
+                </div>
+            </div>
+            <div class="column center">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Panini</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Rated our third favourite <br>★★★★☆</h6>
+                        <img src="images/items/panini.png" class="card-img" alt="panini">
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <br>
+        <hr style="border: 3px solid #89ADAE; width:50%; margin-top: 3rem;">
         <div class="row">
             <div class="column center">
                 <br><br>
@@ -106,7 +138,7 @@ $category_record = mysqli_fetch_assoc($category_result);
             <div class="column center">
                 <br><br>
                 <h3>SELECT ANOTHER ITEM</h3>
-                <p class="para-text-signup">Click below to see the information about another item</p>
+                <p class="para-text-signup">Click below to see the information about an item</p>
                 <!--Drinks form-->
                 <div>
                     <form name="items_form" id="items_form" method="get" action="items.php">
@@ -127,42 +159,8 @@ $category_record = mysqli_fetch_assoc($category_result);
             </div>
         </div>
         <br>
-        <hr style="border: 3px solid #89ADAE; width:50%; margin-top: 5rem;">
 
-        <h3 class="text-uppercase"> Our top picks for the week</h3>
-        <p class="para-text-signup">Get them before they're all sold out!</p>
-        <br>
-        <div class="row">
-            <div class="column center">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Corndog</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Rated our number one favourite <br>★★★★★</h6>
-                        <img src="images/items/corndog.png" class="card-img" alt="corndog">
-                    </div>
-                </div>
-            </div>
-            <div class="column center">
-                <div class="card">
-                    <div class="card-body borderless">
-                        <h5 class="card-title">Caramel Slice</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Rated our second favourite <br>★★★★☆</h6>
-                        <img src="images/items/caramel_slice.png" class="card-img" alt="caramel slice">
-                    </div>
-                </div>
-            </div>
-            <div class="column center">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Panini</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Rated our third favourite <br>★★★★☆</h6>
-                        <img src="images/items/panini.png" class="card-img" alt="panini">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr style="border: 3px solid #89ADAE; width:50%; margin-top: 3rem;">
+        <hr style="border: 3px solid #2A84A0; margin-top: 3rem; margin-bottom: 3rem;"/>
 
         <br><br>
         <h3 class="center">SELECT BY TYPE</h3>
