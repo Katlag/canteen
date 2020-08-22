@@ -1,0 +1,481 @@
+/*fonts imported*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Gudea:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+/*applies to whole page*/
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/*headers */
+h1 {
+    font-size: 4rem;
+    font-weight: 200;
+    font-family: 'Bree Serif', serif;
+    color: #373635;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: 'Bree Serif', serif;
+    color: #373635;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+    color: #373635;
+    text-align: center;
+}
+
+
+h4 {
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Bree Serif', serif;
+    color: #403629;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Gudea', sans-serif;
+    color: #484542;
+    text-align: center;
+}
+
+h6 {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #2A84A0;
+    text-align: center;
+}
+
+
+/*paragraph text*/
+.para-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.para-text-items {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.para-text-signup {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #21718a;
+    text-align: center;
+}
+
+.p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*card text*/
+.card-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*navigation properties*/
+.bg-canteen {
+    background-color: transparent;
+}
+
+.navbar-nav .nav-link {
+    color: #BFBFBC;
+}
+
+.navactive {
+    border-bottom: 3px solid #373635;
+}
+
+
+.nav-image {
+    padding-right: 5rem;
+}
+
+a:hover {
+    color: #89ADAE;
+}
+
+.nav-title {
+    font-family: 'Bree Serif', serif;
+    color: #373635;
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+.dropdown-item {
+    font-family: 'Bree Serif', serif;
+    color: #484542;
+    font-size: 1rem;
+}
+
+
+/*jumbotron properties*/
+.jumbotron {
+    background: url("../images/home_page/jumbotron_ordering.jpg") no-repeat center center;
+    background-size: cover;
+    /*height: 38vh;*/
+}
+
+.jumbotron h3 {
+    font-size: 5rem;
+    color: #403629;
+    font-family: 'Gudea', sans-serif;
+}
+
+.jumbotron p {
+    color: #403629;
+    font-family: 'Gudea', sans-serif;
+    padding-top: 0.5rem;
+}
+
+
+/*cards and padding*/
+.home-page {
+    margin-top: 6rem;
+}
+
+.button-card {
+    font-family: 'Gudea', sans-serif;
+    color: #373635;
+    border-width: 2px;
+    border-color: #2A84A0;
+}
+
+.button-card-signup {
+    font-family: 'Gudea', sans-serif;
+    color: #373635;
+    border-width: 2px;
+    border-color: #2A84A0;
+    margin-left: 20rem;
+}
+
+.button-card-other {
+    font-family: 'Gudea', sans-serif;
+    color: #484542;
+    border-width: 2px;
+    border-color: #799CFF;
+    padding-left: 45%;
+    padding-right: 44.5%;
+
+}
+
+.card-title-info {
+    color: #799CFF;
+}
+
+.carousel-container {
+    margin-left: 8rem;
+    width: 30rem;
+}
+
+.card-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Footer properties */
+.footer-link {
+    color: #484542;
+}
+
+.page-footer {
+    margin-top: 10rem;
+    background-image: linear-gradient(#FFFFFF 20%, #9dc8ca 100%);
+}
+
+.footer_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+/*background image and text for the home page*/
+.background_img {
+    background: url("../images/home_page/canteen_bg_sandwich.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.background_img h1 {
+    position: absolute; /* To place the text on the image*/
+    top: 290px; /* The exact location of the text from the top of the image*/
+    width: 100%;
+    font-size: 5rem;
+    font-family: 'Bree Serif', serif;
+    color: #373635;
+}
+
+.background_img h3 {
+    position: absolute;
+    top: 340px;
+    width: 100%;
+    font-size: 2rem;
+    color: #2A84A0;
+}
+
+.background_img form {
+    margin-top: 21rem;
+    background: transparent;
+    margin-left: 6rem;
+    width: 1rem;
+}
+
+
+/*background image and text for the other remaining pages*/
+.background_img_all {
+    background: url("../images/home_page/jumbotron_ordering.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+}
+
+.background_img_all h2 {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    font-size: 5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.background_img_all h6 {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+    color: #2A84A0;
+}
+
+/*for the update data-page cake image*/
+.background_img_update {
+    background: url("../images/update_data/cake_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+}
+
+/*centers images and text in the middle of the screen*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.table-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Items page tables*/
+
+#itemstable td {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+#itemstable tr:nth-child(odd) {
+    background-color: #f4f0ec;
+    font-family: 'Roboto', sans-serif;
+}
+
+#itemstable th {
+    color: #373635;
+}
+
+.table-striped {
+    border: 5px solid #f4f0ec;
+}
+
+
+/* Table header */
+.row_header {
+    background-color: #89ADAE;
+    padding-top: 3rem;
+    font-size: 1.3rem;
+}
+
+.row_header a:hover {
+    color: #21718a;
+}
+
+.row_header th {
+    color: #373635;
+    padding: 10px 0px;
+    padding-left: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+/*Update data page*/
+
+#items-content {
+    border-radius: 3px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#items-content-update tr {
+    color: #373635;
+    font-size: 0.7rem;
+
+}
+
+#items-content-update th {
+    color: #21718a;
+    font-size: 1rem;
+    text-align: left;
+
+}
+
+
+    /*Delete orders table*/
+#delete-content {
+    width: 65%;
+    font-size: 1rem;
+}
+
+#delete-content th {
+    color: #21718a;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+#delete-content td {
+    text-align: left;
+    padding-left: 0.2rem;
+}
+
+.delete-text {
+    color: red;
+    font-size: 1rem;
+}
+
+
+.button-update {
+    font-family: 'Roboto', sans-serif;
+    background-color: #bfdfe0;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+}
+
+#insert-content {
+    padding: 5px;
+    font-size: 1rem;
+    margin-right: 20rem;
+}
+
+
+.items-icon {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+/*Items sort table*/
+#sort_table {
+    border: 5px solid #f4f0ec;
+}
+
+#sort_content {
+    border-radius: 3px;
+    padding: 5px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.items_table tr {
+    font-size: 0.5rem;
+}
+
+#items-content th {
+    color: #373635;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+
+/* Table rows and columns */
+#sort_table td {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sort_table tr:nth-child(odd) {
+    background-color: #f4f0ec;
+    font-family: 'Roboto', sans-serif;
+}
+
+.itemsTabletext {
+    font-size: 0.8rem;
+    color: #21718a;
+}
+
+
+/*sign up form*/
+form {
+    width: 50%;
+    margin: 0px auto;
+    padding: 30px;
+    background: transparent;
+}
+
+.input-group label {
+    text-align: left;
+    margin-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.input-group input {
+    height: 35px;
+    width: 93%;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.btn {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+
+/*orders page*/
+.label-text {
+    margin-right: 9rem;
+    padding-top: 1rem;
+
+}
+
+.card {
+    border: transparent;
+}
