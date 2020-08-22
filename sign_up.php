@@ -1,4 +1,5 @@
 <?php
+//connection code
 $con = mysqli_connect("localhost", "lagoutariska", "bluefrog55", "lagoutariska_canteen");
 ?>
 
@@ -23,7 +24,7 @@ $con = mysqli_connect("localhost", "lagoutariska", "bluefrog55", "lagoutariska_c
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href='index.php'>
-                <img class="nav-image" width="400" alt="coffee logo" src="images/home_page/canteen_logo3.png">
+                <img class="nav-image" width="400" alt="canteen logo" src="images/home_page/canteen_logo3.png">
             </a>
 
             <div class="collapse navbar-collapse" id="navbarToggler">
@@ -33,7 +34,7 @@ $con = mysqli_connect("localhost", "lagoutariska", "bluefrog55", "lagoutariska_c
                         <a class="nav-title" href="index.php">HOME</a>
                     </li>
                     <li class="nav-item hover">
-                        <a class="nav-title" href="items.php">ITEMS</a>
+                        <a class="nav-title" href="items.php">MENU</a>
                     </li>
                     <li class="nav-item navactive">
                         <a class="nav-title" href="sign_up.php">SIGN UP</a>
@@ -66,7 +67,7 @@ $con = mysqli_connect("localhost", "lagoutariska", "bluefrog55", "lagoutariska_c
         <main>
             <h3>Sign Up Here</h3>
             <hr style="border: 2px solid #89ADAE; width:10%">
-            <h6>*Please enter your Name and Email*</h6>
+            <p class="para-text-signup">*Please enter your Name and Email*</p>
             <form name="signup_form" id='signup_form' method="post" action="process_register.php">
                 <div class="input-group">
                     <label>First Name:</label>
@@ -78,7 +79,7 @@ $con = mysqli_connect("localhost", "lagoutariska", "bluefrog55", "lagoutariska_c
                 </div>
                 <div class="input-group">
                     <label>Email Address:</label>
-                    <input type="text" name="Email">
+                    <input type="text" name="Email" placeholder="Eg. JonesJa@wgc.school.nz">
                 </div>
                 <div class="input-group">
                     <input type="submit" name="submit" id="submit" value="Sign Up"
@@ -99,8 +100,7 @@ $con = mysqli_connect("localhost", "lagoutariska", "bluefrog55", "lagoutariska_c
             <div class="logo mx-auto mb-md-0 mb-4">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.5363311184515!2d174.77800201542235!3d-41.275430479274625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38ae2f27710d0d%3A0x2d0763d38f00974b!2sWellington%20Girls&#39;%20College!5e0!3m2!1sen!2snz!4v1595291334782!5m2!1sen!2snz"
                         width="500" height="300" style="border:0; margin-bottom: 1rem;"
-                        allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
+                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h4 class="text-uppercase font-weight-bold">Visit us</h4>
